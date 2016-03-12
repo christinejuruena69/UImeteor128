@@ -1,9 +1,10 @@
 <!--
-Main Layout.
-Dito na rin nakalagay yung header and yung laman ng mainDiv
+Navigation Bar Template
 -->
-<template name="sideBar">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+<template name="header">
+  <!--Navbar is static, so lagi lang siyang nasa taas.-->
+  <nav class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
     <a class="navbar-brand" href="#">Brand</a>
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,11 +26,4 @@ Dito na rin nakalagay yung header and yung laman ng mainDiv
     </div>
   </div>
     </nav>
-
-
-    <!--Dito yung laman ng mainDiv (cards ng classes etc.)-->
-    <!-- <div class="container">
-        {{>yield}}
-    </div> -->
-
 </template>

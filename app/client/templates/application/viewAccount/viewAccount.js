@@ -1,14 +1,47 @@
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
-Template.viewAccount.events({
-});
+var accountsData = [
+	{
+		name: 'Reginald Recario',
+		username: regrecario,
+		classes: [
+			'CMSC132',
+			'CMSC128']
+	},
+	{
+        name: 'Reginald Recario',
+	    username: regrecario,
+	    classes: [
+	    	'CMSC132', 
+	    	'CMSC128']
+	},
+	{
+	    name: 'Reginald Recario',
+		username: regrecario,
+		classes: [
+			'CMSC132',
+			'CMSC128']
+	},
+	{
+		name: 'Reginald Recario',
+		username: regrecario,
+		classes: [
+			'CMSC132',
+			'CMSC128']
+	}
+];
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-Template.viewAccount.helpers({
+Template.namesList.helpers({
+	accounts: accountsData
 });
+Template.viewAccount.events({
+});
+
+
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */

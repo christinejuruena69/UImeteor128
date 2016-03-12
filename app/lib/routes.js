@@ -22,3 +22,9 @@ Router.route('/randomizer', {
 });
 
 
+//Makes sideBar template the main layout
+// Router.configure({
+//   layoutTemplate: 'sideBar'
+// });
+
+//Para sa main page

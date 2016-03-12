@@ -1,18 +1,24 @@
 <template name="Home">
 
 <body>
+    <form id="userbtn">
+        <input type="radio" name="user" value="Admin" checked> Admin<br>
+        <input type="radio" name="user" value="Teacher"> Teacher<br>
+    </form>
 
     <div class="home">
     	<h5>This is home</h5>
     </div>
-    <div class="sidebar">
-        <!-- <h5> sidebar goes here </h5> -->
+   <!--  <div class="sidebar">
+        <h5> sidebar goes here </h5>
         {{>sidebar}}
 
-    </div>
+    </div> -->
     <div class="mainWindow">
-        {{>accountCard}}
-        {{>classCard}}
+        <!-- {{>accountCard}}
+        {{>classCard}} -->
+        <!-- {{> userHelper}} -->
+        {{> Template.dynamic template=userHelper }}
     </div>
   </body>
 
