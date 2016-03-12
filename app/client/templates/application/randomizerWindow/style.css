@@ -1,0 +1,45 @@
+body{
+	background-color: white;
+}
+
+.randHeader{
+	background-color: white;
+	height: 50px;
+	width: 100%;
+	border-color: black;
+	border: 3px 3px 3px 3px;
+	border-style: solid;
+}
+
+.filterPanel{
+	background-color: white;
+	height: 630px;
+	width: 20%;
+	border-color: black;
+	border: 3px 3px 3px 3px;
+	float: left;
+	border-style: solid;
+}
+
+.names{
+	background-color: white;
+	height: 430px;
+	width: 80%;
+	border-color: black;
+	border: 3px 3px 3px 3px;
+	float: left;
+	border-style: solid;
+	padding: 35px;
+	float: left;
+}
+
+.results{
+	border-color: black;
+	border: 3px 3px 3px 3px;
+	border-style: solid;
+	padding: 35px;
+	background-color: white;
+	height: 200px;
+	width: 80%;
+	float: left;
+}

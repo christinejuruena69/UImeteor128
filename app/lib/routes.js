@@ -5,7 +5,20 @@ Router.configure({
 });
 
 Router.route('/', {
-    name: 'home',
+    name: 'Home',
+    // template: 'Home',
     controller: 'HomeController',
     where: 'client'
 });
+
+Router.route('/viewAccount', {
+    name: 'viewAccount',
+    template: 'viewAccount'
+});
+
+Router.route('/randomizer', {
+    name: 'randomizerWindow',
+    template: 'randomizerWindow'
+});
+
+
