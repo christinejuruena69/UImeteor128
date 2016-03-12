@@ -1,23 +1,23 @@
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
-Template.adminTemplate.events({
+Template.filterPanel.events({
 });
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-Template.adminTemplate.helpers({
+Template.filterPanel.helpers({
 });
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
-Template.adminTemplate.onCreated(function () {
+Template.filterPanel.onCreated(function () {
 });
 
-Template.adminTemplate.onRendered(function () {
+Template.filterPanel.onRendered(function () {
 });
 
-Template.adminTemplate.onDestroyed(function () {
+Template.filterPanel.onDestroyed(function () {
 });

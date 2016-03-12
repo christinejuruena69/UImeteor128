@@ -1,23 +1,23 @@
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
-Template.adminTemplate.events({
+Template.accountCard.events({
 });
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-Template.adminTemplate.helpers({
+Template.accountCard.helpers({
 });
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
-Template.adminTemplate.onCreated(function () {
+Template.accountCard.onCreated(function () {
 });
 
-Template.adminTemplate.onRendered(function () {
+Template.accountCard.onRendered(function () {
 });
 
-Template.adminTemplate.onDestroyed(function () {
+Template.accountCard.onDestroyed(function () {
 });
