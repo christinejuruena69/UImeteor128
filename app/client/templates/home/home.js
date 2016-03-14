@@ -1,42 +1,64 @@
-var user;
-function getRadioVal(form, name) {
-    var val;
-    // get list of radio buttons with specified name
-    var radios = form.elements[name];
-    
-    // loop through list of radio buttons
-    for (var i=0, len=radios.length; i<len; i++) {
-        if ( radios[i].checked ) { // radio checked?
-           return  radios[i].value; // if so, hold its value in  return value of checked radio or undefined if none checked
-        }
-    }
-}
-// get value of selected 'ship' radio button in 'demoForm'
-user = getRadioVal( document.getElementById('userbtn'), 'user' );
-alert(val);
-
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
+// Template.Home.events({
+
+// });
+
+// Session.setDefault('myTemplate', 'Home');
+// "click .adminbtn": function (event) {
+//     Session.set("myTemplate", 'accountCard');
+// }
+
+// good
+// Session.setDefault('accountCard', false);
+// Template.body.isTrue = function() { Session.get('accountCard'); }
+// Template.Home.events({
+//     'click .adminbtn': function(){
+//         //load a new template
+//         console.log("You pressed the addNewplace button");//this fn is called properly
+//            Session.set('accountCard', true);
+//            Blaze.renderWithData(Template.accountCard);
+//     }
+// });
 Template.Home.events({
+    'click .adminbtn': function(){
+        console.log("Pressed");//this fn is called properly
+        Session.set('teacherAccount', false);
+        Session.set('adminAccount', true);
+    },
+    'click .teacherbtn': function(){
+        console.log("Pressed teachr");//this fn is called properly
+        Session.set('adminAccount', false);
+        Session.set('teacherAccount', true);
+    }
+});
+Template.Home.helpers({    
+    'adminAccount': function(){
+        return Session.get('adminAccount');
+    },
+    'teacherAccount': function(){
+        return Session.get('teacherAccount');
+    }
+
 });
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-Template.Home.helpers({
-	userHelper: function  () {
-		// body...
-		if (user=="Admin") return Template.accountCard;
-		else if(user=="Teacher") return Template.classCard;
-    // note that we return a Template object, not a string
-	}
-});
+// Template.Home.helpers({
+// 	// tab: function() {
+//  //    return Template.instance().currentTab.get();
+//  //  },
+  
+// });
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
 Template.Home.onCreated(function () {
+	 // this.UserTemplate = new ReactiveVar( false );
+	 // this.currentTab = new ReactiveVar( "accountCard" );
 });
 
 Template.Home.onRendered(function () {

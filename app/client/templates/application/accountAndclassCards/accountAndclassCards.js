@@ -1,23 +1,34 @@
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
-Template.accountCard.events({
+Template.accountAndclassCards.events({
 });
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-Template.accountCard.helpers({
-});
+// alert(Session.get('adminAccount'));
+// alert(Session.get('teacherAccount'));
 
+
+Template.accountAndclassCards.helpers({
+	determineUser : function(){
+		if (Session.get('teacherAccount')){
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+});
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
-Template.accountCard.onCreated(function () {
+Template.accountAndclassCards.onCreated(function () {
 });
 
-Template.accountCard.onRendered(function () {
+Template.accountAndclassCards.onRendered(function () {
 });
 
-Template.accountCard.onDestroyed(function () {
+Template.accountAndclassCards.onDestroyed(function () {
 });

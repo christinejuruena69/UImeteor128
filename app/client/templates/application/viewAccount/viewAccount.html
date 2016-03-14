@@ -1,77 +1,10 @@
 <template name="viewAccount">
     <div class="viewAccount">
-        <div class="account-header">
-          <div class="teacherPic">           
-          </div>
-          <h1>Reginald Recario</h1>  
-          <h6>@regrecario</h6>
-          
-        </div>      
+       {{ >accountHeader  }}  
         <div class="account-body">
-            <div class="account-body-header"> 
-               <h6>Classes</h6>
-                <div class="icon-divs">
-                <button type="button" class="btn btn-link">
-                 <span class="glyphicon glyphicon-plus"></span>
-                 </button>
-                 
-                 <button type="button" class="btn btn-link">
-                 <span class="glyphicon glyphicon-th-large"></span>
-                 </button>
-                 <button type="button" class="btn btn-link">
-                  <span class="glyphicon glyphicon-align-justify"></span> 
-                 </button>
-                  
-                </div>
-            </div>
+            {{>cardType}}
           <!-- insert account cards here -->
-         <div class="col-md-4">
-           <div class="thumbnail">
-             <div class="caption">
-               <h3 id="thumbnail-label">Sample
-                 <a class="anchorjs-link" href="#thumbnail-label"></a>
-                 <span>
-                 <span class="dropdown-toggle" data-toggle="dropdown" aria- haspopup="true" aria-expanded="false">
-                  <span class="glyphicon glyphicon-th-large pull-right"></span>
-                 </span>
-                 <ul class="dropdown-menu pull-right">
-                   <li><a href="#">Action</a></li>
-                   <li><a href="#">Another action</a></li>
-                   <li><a href="#">Something else here</a></li>
-                   <li role="separator" class="divider"></li>
-                   <li><a href="#">Separated link</a></li>
-                 </ul>
-               </span>
-               </h3>
-               <p>Introduction to Software Engineering</p>
-               <button class="pull-right">123 Students</button>
-             </div>
-           </div>
-         </div>
-
-         <div class="col-md-4">
-           <div class="thumbnail">
-             <div class="caption">
-               <h3 id="thumbnail-label">Sample
-                 <a class="anchorjs-link" href="#thumbnail-label"></a>
-                 <span>
-                 <span class="dropdown-toggle" data-toggle="dropdown" aria- haspopup="true" aria-expanded="false">
-                   <span class="glyphicon glyphicon-th-large pull-right"></span>
-                 </span>
-                 <ul class="dropdown-menu pull-right">
-                   <li><a href="#">Action</a></li>
-                   <li><a href="#">Another action</a></li>
-                   <li><a href="#">Something else here</a></li>
-                   <li role="separator" class="divider"></li>
-                   <li><a href="#">Separated link</a></li>
-                 </ul>
-               </span>
-               </h3>
-               <p>Computer Architecture</p>
-               <button class="pull-right">123 Students</button>
-              </div>
-           </div>
-         </div>
+         {{> classCard}}
          </div>
      </div>
 

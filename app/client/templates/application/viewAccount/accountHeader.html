@@ -1,0 +1,26 @@
+<template name="accountHeader">
+    <div class="account-header">
+        <div class="teacherPic">           
+            <h1>Reginald Recario</h1>  
+          
+            {{#if determineUser }}
+                <!-- {{> accountCard }} -->
+            	<h6> Teacher </h6>
+			{{else}}
+            	<h6> Admin </h6>
+            {{/if}}
+<!-- 
+            {{#if en}}
+			  {{text.en}}
+			{{else}}
+			  {{#if tc}}
+			    {{text.tc}}
+			  {{/if}}
+			{{/if}}
+ -->
+
+            <h6>@regrecario</h6>
+          
+        </div>    
+    </div>    
+</template>        

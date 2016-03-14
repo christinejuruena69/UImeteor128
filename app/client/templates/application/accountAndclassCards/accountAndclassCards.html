@@ -1,0 +1,23 @@
+<template name="accountAndclassCards">
+        <!-- <h1>accountAndclassCards    s</h1> -->
+           <div class="accountAndclassCards">
+               
+
+               <div class="col-md-4">
+                  <div class="thumbnail card">
+                    <div class="caption">
+                        {{#if determineUser }}
+                <!-- {{> accountCard }} -->
+                            {{>classCard}}
+            	           <!-- <h6> Teacher </h6> -->
+			            {{else}}
+                            {{>accountCard}}
+
+                        {{/if}}
+                    </div>
+                  </div>
+                </div>
+
+               
+          </div>    
+</template>
