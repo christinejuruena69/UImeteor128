@@ -3,7 +3,9 @@
 
     <h3 id="thumbnail-label">
     
-       <a href="{{pathFor route='viewAccount'}}">Reginald Recario</a>
+       <a href="{{pathFor route='viewTeacherAccount'}}">{{name}}</a>
+       <h6>{{username}}</h6>
+       <h6>{{acounttype}}</h6>  
     
                         <a class="anchorjs-link" href="#thumbnail-label"></a>
                         <span>
@@ -11,12 +13,12 @@
                           <span class="glyphicon glyphicon-th-large pull-right"></span>
                         </span>
                         <ul class="dropdown-menu pull-right">
-                          <li><a href="#">Modify class list</a></li>
+                          <li><a href="#">Delete Account</a></li>
+                          <li><a href="#">Deativate account</a></li>
                         </ul>
                       </span>
                       </h3>
-                      <p>Teacher account</p>
-                       <a href="{{pathFor route='randomizerWindow'}}">randomizerWindow</a>
-                      <button class="pull-right card-button">123 Students</button>
+                      <p>Admin account</p>
+                       
                       </div>
 </template>

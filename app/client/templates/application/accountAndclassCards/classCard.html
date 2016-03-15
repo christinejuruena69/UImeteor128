@@ -1,10 +1,15 @@
 <template name="classCard">
+
+<!-- {{#each courses}} -->
+    
+
+
    <div class="accountAndclassCards">
 
-
-
+                            
     <h3 id="thumbnail-label">
-    CMSC 128
+    {{coursecode}}
+    <!-- {{coursecode}} -->
 <a class="anchorjs-link" href="#thumbnail-label"></a>
 <span>
 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -15,8 +20,12 @@
 </ul>
       </span>
       </h3>
-      <p>Introduction to Software Engineering</p>
+      <!-- <p>Introduction to Software Engineering</p> -->
+      <p>{{coursetitle}}</p>
+
        <a href="{{pathFor route='randomizerWindow'}}">randomizerWindow</a>
       <button class="pull-right card-button">123 Students</button>
 </div>
+ <!-- {{> classCard}} -->
+<!-- {{/each}} -->
 </template>
