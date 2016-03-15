@@ -1,6 +1,6 @@
 var namesData = [
 	{
-		name: 'Abcde Fghij'
+		name: 'Abcde Fghijf'
 	},
 	{
 		name: 'Klmno Pqrst'
@@ -10,7 +10,29 @@ var namesData = [
 	},
 	{
 		name: 'Jsdgd Qwevd'
+	},
+	{
+		name: 'Sgsgef Dgsef'
+	},
+	{
+		name: 'Agsjg Qweles'
+	},
+	{
+		name: 'Klmno Pqrst'
+	},
+	{
+		name: 'Jsdgd Qwevd'
+	},
+	{
+		name: 'Sgsgef Dgsef'
+	},
+	{
+		name: 'Agsjg Qweles'
+	},
+	{
+		name: 'Klmno Pqrst'
 	}
+	
 ];
 
 Template.namesList.helpers({
