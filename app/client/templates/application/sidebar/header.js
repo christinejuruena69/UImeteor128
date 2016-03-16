@@ -1,6 +1,5 @@
 Template.header.events({
-    'click': function(e) {
-    	e.preventDefault();
+    'click': function() {
     	$("#wrapper").toggleClass("toggled");
     }
 });
