@@ -22,4 +22,3 @@ iron:router
 twbs:bootstrap
 underscore
 reactive-var
-jss:flat-ui
