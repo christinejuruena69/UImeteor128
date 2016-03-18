@@ -136,5 +136,8 @@
         margin-right: 0;
     }
 }
-
+#header.smaller{
+    height: 40px;
+    position: fixed;
+}
 

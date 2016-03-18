@@ -2,9 +2,7 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 // Template.Home.events({
-
 // });
-
 Template.Home.events({
     'click .adminbtn': function() {
         console.log("Pressed"); //this fn is called properly
@@ -26,23 +24,14 @@ Template.Home.helpers({
     }
 
 });
-
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
-// Template.Home.helpers({
-//  // tab: function() {
-//  //    return Template.instance().currentTab.get();
-//  //  },
-
-// });
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */
 /*****************************************************************************/
 Template.Home.onCreated(function() {
-    // this.UserTemplate = new ReactiveVar( false );
-    // this.currentTab = new ReactiveVar( "accountCard" );
 });
 
 Template.Home.onRendered(function() {});
