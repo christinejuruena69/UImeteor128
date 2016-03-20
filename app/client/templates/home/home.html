@@ -1,50 +1,17 @@
 <template name="Home">
-
-<body>
- 
-
-
-   <!--  <ul class="nav nav-pills">
-    <li data-template="movies" role="presentation"><a href="#">accountAndaccountAndclassCardss</a></li>
-    <li data-template="games" role="presentation"><a href="#">accountAndclassCards</a></li>
-  </ul> -->
-    <!-- <input type="submit" value="Check Answer" onClick="radioCheck()"> -->
-
-
-    <div class="home">
-        <!-- <h5>This is home</h5> -->
-        <!-- <br /> -->
-            {{ >accountHeader  }}  
-        <div class="cardType">
-
+    <body>
+        
+        <div class="home">
+            {{ >accountHeader  }}
+            <div class="cardType">
                 {{ >cardType }}
-         <input type="button" class="adminbtn"  value="Admin">
-        <input type="button" class="teacherbtn"  value="Teacher">
+                <input type="button" class="adminbtn"  value="Admin">
+                <input type="button" class="teacherbtn"  value="Teacher">
+            </div>
+            
+            <div class="mainWindow">
+                {{> accountAndclassCards}}
+            </div>
         </div>
-        
-
-
-   <!--  <div class="sidebar">
-        <h5> sidebar goes here </h5>
-        {{>sidebar}}
-
-    </div> -->
-        <div class="mainWindow">
-        <!-- {{> UI.dynamic template=myTemplate}} -->
-
-        <!-- {{#if adminAccount }} -->
-            {{> accountAndclassCards}}
-        <!-- {{/if}} -->
-        
-        <!-- {{ > myTemplate }} -->
-           <!--  {{>accountAndaccountAndclassCardss}}
-            {{>accountAndclassCards}} -->
-            <!-- {{> userHelper}} -->
-            <!-- {{#if UserTemplate }} -->
-            <!-- {{> Template.dynamic template=tab}} -->
-        </div>
-    </div>
-  </body>
-
-
+    </body>
 </template>
