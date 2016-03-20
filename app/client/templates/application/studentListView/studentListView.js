@@ -21,3 +21,9 @@ Template.studentListView.onRendered(function () {
 
 Template.studentListView.onDestroyed(function () {
 });
+
+
+Router.route('studentListView', {
+    name: 'studentListView',
+    template: 'studentListView'
+});
