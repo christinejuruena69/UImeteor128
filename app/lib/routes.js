@@ -21,10 +21,7 @@ Router.route('/randomizer', {
     template: 'randomizerWindow'
 });
 
-
-//Makes sideBar template the main layout
-// Router.configure({
-//   layoutTemplate: 'sideBar'
-// });
-
-//Para sa main page
+Router.route('/mainClassView', {
+    name: 'mainClassView',
+    template: 'mainClassView'
+});
