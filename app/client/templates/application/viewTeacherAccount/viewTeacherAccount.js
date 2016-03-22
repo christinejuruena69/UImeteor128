@@ -19,31 +19,32 @@ if (Meteor.isClient) {
         // });
 //dont delete
 
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 0)
-        {
-            // element has been scrolled into view
-            // alert('element scrolled into view');
-            $('#header').addClass('smaller');
-            $('.account-header').addClass('smaller');
-        }else{
-            $('#header').removeClass('smaller');
-            $('.account-header').removeClass('smaller');
+    // $(window).scroll(function () {
+    //     if ($(document).scrollTop() > 0)
+    //     {
+    //         // element has been scrolled into view
+    //         // alert('element scrolled into view');
+    //         $('#header').addClass('smaller');
+    //         $('.account-header').addClass('smaller');
+    //     }else{
+    //         $('#header').removeClass('smaller');
+    //         $('.account-header').removeClass('smaller');
 
-        }
-    });
-    function isScrolledIntoView(elem){
-        var $elem = $(elem);
-        var $window = $(window);
+    //     }
+    // });
+    // function isScrolledIntoView(elem){
+    //     var $elem = $(elem);
+    //     var $window = $(window);
 
-        var docViewTop = $window.scrollTop();
-        var docViewBottom = docViewTop + $window.height();
+    //     var docViewTop = $window.scrollTop();
+    //     var docViewBottom = docViewTop + $window.height();
 
-        var elemTop = $elem.offset().top;
-        var elemBottom = elemTop + $elem.height();
+    //     var elemTop = $elem.offset().top;
+    //     var elemBottom = elemTop + $elem.height();
 
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    }
+    //     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    // }
+    //dont deltet
 }
 Template.viewTeacherAccount.events({
 }); 
