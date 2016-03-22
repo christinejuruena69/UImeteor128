@@ -1,4 +1,4 @@
-div.account-header h1,h6{
+div.account-header h1,h6.account-header{
     text-align: center;
     line-height:14px;
 }
