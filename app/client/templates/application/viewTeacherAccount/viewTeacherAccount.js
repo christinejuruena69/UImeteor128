@@ -2,19 +2,20 @@
 /*****************************************************************************/
 /* Home: Event Handlers */
 /*****************************************************************************/
+Template.viewTeacherAccount.events({
+});
 
 /*****************************************************************************/
 /* Home: Helpers */
 /*****************************************************************************/
+
 Template.viewTeacherAccount.helpers({
-	loadCourses : function(){
-		Session.set('adminAccount', false);
+    loadCourses : function() {
+        Session.set('adminAccount', false);
         Session.set('teacherAccount', true);
         return true;
-	}
+    }
 });
-
-
 
 /*****************************************************************************/
 /* Home: Lifecycle Hooks */

@@ -5,8 +5,21 @@ Router.configure({
 });
 
 Router.route('/', {
+    // name: 'home',
     name: 'Home',
     // template: 'Home',
+    controller: 'HomeController',
+    where: 'client'
+});
+
+Router.route('/register', {
+    name: 'RegisterForm',
+    controller: 'HomeController',
+    where: 'client'
+});
+
+Router.route('/login', {
+    name: 'LoginForm',
     controller: 'HomeController',
     where: 'client'
 });
@@ -21,10 +34,12 @@ Router.route('/randomizer', {
     template: 'randomizerWindow'
 });
 
+Router.route('/mainClassView', {
+    name: 'mainClassView',
+    template: 'mainClassView'
+});
 
-//Makes sideBar template the main layout
-// Router.configure({
-//   layoutTemplate: 'sideBar'
-// });
-
-//Para sa main page
+Router.route('/studentListView', {
+    name: 'studentListView',
+    template: 'studentListView'
+});
