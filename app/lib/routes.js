@@ -5,8 +5,21 @@ Router.configure({
 });
 
 Router.route('/', {
+    // name: 'home',
     name: 'Home',
     // template: 'Home',
+    controller: 'HomeController',
+    where: 'client'
+});
+
+Router.route('/register', {
+    name: 'RegisterForm',
+    controller: 'HomeController',
+    where: 'client'
+});
+
+Router.route('/login', {
+    name: 'LoginForm',
     controller: 'HomeController',
     where: 'client'
 });
@@ -24,4 +37,9 @@ Router.route('/randomizer', {
 Router.route('/mainClassView', {
     name: 'mainClassView',
     template: 'mainClassView'
+});
+
+Router.route('/studentListView', {
+    name: 'studentListView',
+    template: 'studentListView'
 });

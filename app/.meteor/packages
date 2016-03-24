@@ -16,9 +16,16 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
-insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
+alanning:roles
+erasaur:meteor-lodash
 twbs:bootstrap
-underscore
+aldeed:simple-schema
+dburles:collection-helpers
+aldeed:collection2
+accounts-password
+accounts-ui             #Baka nga di na kakailanganin
+accounts-base
+msavin:mongol           # Help view data in database
 reactive-var
+# underscore
