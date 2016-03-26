@@ -40,6 +40,21 @@ var courseData = [{
 }, {
     coursecode: 'CMSC125',
     coursetitle: 'operating system'
+},{
+    coursecode: 'CMSC141',
+    coursetitle: 'Stuff'
+},{
+    coursecode: 'CMSC142',
+    coursetitle: 'stuff'
+},{
+    coursecode: 'CMSC125',
+    coursetitle: 'operating system'
+},{
+    coursecode: 'CMSC125',
+    coursetitle: 'operating system'
+},{
+    coursecode: 'CMSC125',
+    coursetitle: 'operating system'
 }];
 
 /*****************************************************************************/
