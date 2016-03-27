@@ -21,7 +21,31 @@ div.account-body-header div.icon-divs {
 
 div.account-body-header h6.accntype {
     margin-top: -15px;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    div.account-body-header h6.accntype {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For desktop: */    
+    div.account-body-header h6.accntype {
+        /*display: none;*/
+        margin-left: 150px;
+        text-align: left;
+
+    }
+    div.account-body-header div.icon-divs {
+        margin-top: -38px;
+        margin-right: 130px;
+        float: right;
+
+    }
 
 }
