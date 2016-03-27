@@ -1,4 +1,4 @@
-div.account-header h2, h6.account-header {
+div.account-header h2, h6.account-header-type {
     text-align: center;
     line-height: 12px;
 }
@@ -20,4 +20,11 @@ div.account-header div.teacherPic {
     width: 100px;
     height: 100px;
     background: #009688;
+}
+
+@media only screen and (max-width: 500px) {
+    h6.account-header-type {
+        text-align: center;
+        margin-left: -30px;
+    }
 }
