@@ -1,7 +1,7 @@
 div.account-body-header {
     z-index: 10px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: #607d8b;
 }
 
@@ -14,12 +14,14 @@ div.account-body-header div.icon-divs span {
 }
 
 div.account-body-header div.icon-divs {
-    margin-top: -35px;
+    margin-top: -38px;
     margin-right: 100px;
     float: right;
 }
 
-div.account-body-header h6 {
-    margin-top: -10px;
+div.account-body-header h6.accntype {
+    margin-top: -15px;
     padding-top: 20px;
+    text-align: center;
+
 }

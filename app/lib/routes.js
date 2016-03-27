@@ -24,9 +24,9 @@ Router.route('/login', {
     where: 'client'
 });
 
-Router.route('/viewTeacherAccount', {
-    name: 'viewTeacherAccount',
-    template: 'viewTeacherAccount'
+Router.route('/ViewTeacherAccount', {
+    name: 'ViewTeacherAccount',
+    template: 'ViewTeacherAccount'
 });
 
 Router.route('/randomizer', {
