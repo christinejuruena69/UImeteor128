@@ -8,8 +8,8 @@ var studentsData = [{
     text: 'Ricka Faye Sison'
 }];
 
-Template.mainClassView.helpers({
+Template.MainClassView.helpers({
     studentslist: studentsData
 });
 
-Template.mainClassView.events({});
+Template.MainClassView.events({});
