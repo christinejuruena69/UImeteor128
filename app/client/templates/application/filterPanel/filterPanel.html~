@@ -39,7 +39,8 @@
 				<p style="font-weight: bold; padding-left: 27px">Section:</p>
 				<div id="sections">
 					<input type="radio" name="sectionChoice" id="selectAll" > Select All </input> 
-					<input type="radio" name="sectionChoice" id="custom"> Custom </input><br><br>
+					<input type="radio" name="sectionChoice" id="selectAll" onclick="s()"> Select All </input>
+					<input type="radio" name="sectionChoice" id="custom"  onclick="sa()"> Custom </input><br><br>
 						<span id="labSections">
 								<input type="checkbox" name="labSection" class="labSection"> 1L </input>
 								<input type="checkbox" name="labSection" class="labSection"> 2L </input>
